@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compass Podcasts</title>
+    <link rel="icon" href="Compass.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        :root {
+            --primary-color: #2c3e50; /* Dark Blue-Gray */
+            --secondary-color: #3498db; /* Bright Blue */
+            --accent-color: #e74c3c; /* Red */
+            --text-color: #333;
+            --bg-color: #f0f0f0;
+            --card-bg: #fff;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        /* Header Styles */
+        header {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 2rem 0;
+            margin-bottom: 2rem;
+        }
+
+        header h2 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header h3 {
+            font-weight: 400;
+            font-size: 1.2rem;
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: var(--secondary-color);
+            padding: 0.75rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2rem;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+        }
+
+        /* Main Content Styles */
+        main {
+            padding: 2rem;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        /* Home Section */
+        #Home img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        #Home h4 {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        /* Podcast Pages Section */
+        #PodcastPages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #PodcastPages div {
+            margin: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background-color: var(--bg-color);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            width: 250px;
+        }
+
+        #PodcastPages h3 {
+            font-size: 1.4rem;
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
+        }
+
+        /* About Section */
+        #About p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        /* Button Styles */
+        .button {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background-color: var(--secondary-color);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1rem;
+            transition: background-color 0.3s ease;
+            margin-top: 1rem;
+        }
+
+        .button:hover {
+            background-color: var(--primary-color);
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            font-size: 0.9rem;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            header {
+                padding: 1rem 0;
+            }
+
+            header h2 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                white-space: nowrap;
+                justify-content: flex-start;
+                padding: 0.5rem 0;
+            }
+
+            nav li {
+                margin: 0 0.75rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+                padding: 0.5rem 1rem;
+            }
+
+            #PodcastPages {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #PodcastPages div {
+                width: 90%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Compass Podcasts</h2>
+        <h3>The compass to your knowledge and entertainment.</h3>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="podcasts.html">Podcasts</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="Home">
+            <h2>Welcome To Compass Podcasts</h2>
+            <img src="Compass.jpg" alt="Compass">
+            <h4>Welcome to Compass Podcasts. Today, we invite you to embark on a captivating audio journey. Join us on this exciting adventure and let our podcasts be your compass to knowledge and entertainment.</h4>
+        </section>
+
+        <section id="PodcastPages">
+            <h2>Podcast Pages</h2>
+            <div>
+                <h3>Storytales for Kids</h3>
+                <a href="storytales.html" class="button">Read</a>
+            </div>
+            <div>
+                <h3>Festivals!</h3>
+                <a href="festivals.html" class="button">Read</a>
+            </div>
+            <div>
+                <h3>Dramatales</h3>
+                <a href="dramatales.html" class="button">Read</a>
+            </div>
+            <div>
+                <h3>Exoplanet Talk</h3>
+                <a href="exoplanet.html" class="button">Read</a>
+            </div>
+        </section>
+
+        <section id="About">
+            <h2>About</h2>
+            <p>Hi! I'm Jonas, the creator of Compass Podcasts! I created these podcasts with my sister Adeline as a fun project to express our interests like storytelling, history, and astronomy...</p>
+            <a href="about.html" class="button">Read more</a>
+        </section>
+        
+        <a href="podcasts.html" class="button">Our Podcasts</a>
+
+    </main>
+
+    <footer>
+        <p>© 2024 Compass Podcasts. All rights reserved.</p>
+        <p>"As long as you're interested in people and things, that curiosity propels you forward." -Joanna Coles</p>
+    </footer>
+
+</body>
+</html>

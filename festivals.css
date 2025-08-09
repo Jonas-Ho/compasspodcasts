@@ -1,0 +1,295 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+    line-height: 1.7;
+}
+
+header {
+    background: linear-gradient(45deg, #ffc107, #fd7e14);
+    color: #fff;
+    padding: 3em 0;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.3em;
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 0.75em;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 12px;
+}
+
+header::before,
+header::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    top: -75px;
+    left: -75px;
+}
+
+header::after {
+    top: auto;
+    left: auto;
+    bottom: -75px;
+    right: -75px;
+}
+
+nav {
+    background-color: #343a40;
+    color: #fff;
+    padding: 0.75em 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.75em 1.5em;
+    display: inline-block;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.container {
+    width: 85%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    border-radius: 15px;
+}
+
+.episode {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #dee2e6;
+    padding-bottom: 20px;
+}
+
+.episode h2 {
+    color: #e44d26;
+    margin-bottom: 0.75em;
+}
+
+.episode p {
+    color: #495057;
+}
+
+.episode iframe {
+    width: 100%;
+    height: 352px;
+    border-radius: 12px;
+}
+
+#about {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#about h2 {
+    color: #212529;
+    margin-bottom: 1em;
+}
+
+#about p {
+    color: #6c757d;
+}
+
+#submission-form {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#submission-form h2 {
+    color: #212529;
+    margin-bottom: 1em;
+}
+
+footer {
+    text-align: center;
+    padding: 2em 0;
+    background-color: #343a40;
+    color: #fff;
+    border-top: 1px solid #495057;
+    position: relative;
+    overflow: hidden;
+}
+
+footer p {
+    font-size: 0.9em;
+    margin-bottom: 0.5em;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffc107;
+}
+
+footer::before,
+footer::after {
+    content: '⭐';
+    position: absolute;
+    font-size: 1.5em;
+    color: rgba(255, 255, 255, 0.2);
+}
+
+footer::before {
+    top: 10px;
+    left: 10px;
+}
+
+footer::after {
+    bottom: 10px;
+    right: 10px;
+}
+
+.more-episodes-button {
+    display: inline-block;
+    padding: 1em 2em;
+    background-color: #1DB954;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.more-episodes-button:hover {
+    background-color: #14853e;
+}
+
+.spotify-button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #1DB954;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.spotify-button:hover {
+    background-color: #14853e;
+}
+
+#more-podcasts {
+    margin-top: 40px;
+    padding: 25px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+#more-podcasts h2 {
+    color: #212529;
+    margin-bottom: 1em;
+}
+
+.podcast-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.podcast-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.podcast-card h3 {
+    color: #e44d26;
+    margin-bottom: 0.5em;
+}
+
+.podcast-card p {
+    color: #495057;
+    font-size: 0.9em;
+    margin-bottom: 1em;
+}
+
+.podcast-button {
+    display: inline-block;
+    padding: 0.75em 1.5em;
+    background-color: #fd7e14;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.podcast-button:hover {
+    background-color: #e44d26;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.1em;
+        max-width: 90%;
+    }
+
+    nav {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding: 0.5em 0;
+    }
+
+    nav a {
+        display: inline-block;
+        padding: 0.5em 1em;
+        margin: 0 0.5em;
+    }
+
+    .episode iframe {
+        height: 450px;
+    }
+}

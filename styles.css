@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+    background-color: tan;
+    text-align: center;
+    margin: 0;
+}
+
+header, footer {
+    text-align: center;
+    padding: 15px 5px;
+    background-color: #b92828;
+    color: #FFFFFF;
+}
+
+nav {
+    background-color: #b92828;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.6rem;
+    padding: 15px 25px; 
+    color: white;
+}
+
+li:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+main {
+    padding: 20px 5px;
+    background-color: rgb(210, 180, 140);
+    color: black;
+}
+
+section {
+    background: rgb(246, 246, 203);
+    padding: 15px 10px;
+    margin: 1em auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.Podcast img {
+    width: 50%;
+    height: auto;
+}
+
+.Podcast:hover {
+    transform: scale(1.03);
+    box-shadow: 0px 2px 8px rgb(133, 133, 133);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.Podcast-Container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the Podcast items */
+}
+
+.Podcast {
+    background-color: tan;
+    padding: 5px 10px;
+    margin: 10px auto; /* Center the Podcast items */
+    border-radius: 5%;
+    flex: 1 1 150px;
+    max-width: 300px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #b92828;
+    color: white;
+}
+
+.Festivals-Header img {
+    width: 30%;
+    height: auto;
+}
+
+.button {
+    background-color: rgb(246, 246, 203);
+    border: solid black;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px; /* Increased padding for better touch targets */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.2rem; /* Increased button font size */
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: rgb(224, 224, 179);
+}
+
+.spotify-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #1DB954;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.spotify-button:hover {
+    background-color: #1ed760;
+}
+
+/* Media queries for better mobile responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center align the nav items */
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+
+    nav ul li a {
+        font-size: 1.4rem; /* Adjust font size for better readability */
+        padding: 10px 20px; /* Adjust padding for better touch targets */
+    }
+
+    .button {
+        font-size: 1rem; /* Adjust button font size */
+        padding: 10px 15px; /* Adjust button padding */
+    }
+
+    section {
+        width: 95%; /* Make sections take up more screen width */
+        margin: 1em auto; /* Center sections */
+    }
+
+    .Podcast {
+        flex: 1 1 100%; /* Make podcast items take full width */
+        max-width: none; /* Remove max-width restriction */
+        margin: 10px 0; /* Adjust margin for better spacing */
+    }
+
+    .Podcast img {
+        width: 80%; /* Adjust image width for better fit */
+    }
+
+    .Festivals-Header img {
+        width: 50%; /* Adjust festival header image width */
+    }
+}
